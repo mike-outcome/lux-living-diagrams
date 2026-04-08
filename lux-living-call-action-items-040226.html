@@ -428,7 +428,7 @@
           <div class="owner"><span class="owner-badge owner-dev">Dev Team</span></div>
         </div>
         <div class="decision-box" style="margin: 4px 18px 8px;">
-          <strong>Note:</strong> This may be a more significant change requested. Assess the development required and let Mike know how much time this will take.
+          <strong>Update (4/8):</strong> Liz confirmed this is <strong>not necessary for deployment</strong>. Confidence percentages + Ascent link are sufficient for property teams to QA. Deprioritized &mdash; nice-to-have for a future iteration.
         </div>
       </div>
     </div>
@@ -608,10 +608,118 @@
     </div>
   </div>
 
+  <!-- ═══════════════════ 4/8 CALL UPDATES ═══════════════════ -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon gen">+</div>
+      <div class="section-header-text">
+        <h2>New Action Items from 4/8 Call</h2>
+        <div class="section-desc">Outcome x Luxury Living Implementation Weekly &middot; April 8, 2026</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="action-item">
+          <div class="number">1</div>
+          <div class="content">
+            <strong>Hold QA output emails</strong>
+            <div class="detail">Do not send comparison output emails to property inboxes until full QA is complete. Prevent property teams from seeing unverified output.</div>
+          </div>
+          <div class="owner"><span class="owner-badge owner-dev">Outcome</span></div>
+        </div>
+        <div class="action-item">
+          <div class="number">2</div>
+          <div class="content">
+            <strong>Route QA output to Liz's inbox</strong>
+            <div class="detail">Monday 4/13 &mdash; send QA test output comparison emails to Liz's inbox (not property inboxes). Liz wants to verify mechanics and see what property teams will see before going live. Both Mike and Liz can be on the recipient list.</div>
+          </div>
+          <div class="owner"><span class="owner-badge owner-dev">Outcome</span></div>
+        </div>
+        <div class="action-item">
+          <div class="number">3</div>
+          <div class="content">
+            <strong>Create training video for property teams</strong>
+            <div class="detail">Video explaining what property teams are looking at: mismatched fields, missing fields, how to read the output and take action. Required before deployment to properties.</div>
+          </div>
+          <div class="owner"><span class="owner-badge owner-dev">Outcome</span></div>
+        </div>
+        <div class="action-item">
+          <div class="number">4</div>
+          <div class="content">
+            <strong>Fix Aptly auto-forwards</strong>
+            <div class="detail">Liz scheduled calendar time for 4/9 morning to investigate why auto-forwards aren't firing for Aptly properties (Seven 10 West, Norweta, No. 508).</div>
+          </div>
+          <div class="owner"><span class="owner-badge owner-liz">Liz</span></div>
+        </div>
+        <div class="action-item">
+          <div class="number">5</div>
+          <div class="content">
+            <strong>Check AppFolio for downloadable application documents</strong>
+            <div class="detail">For UC2 &mdash; Liz to contact management to check if downloadable application docs or related info is available from the AppFolio system. Currently unclear if UC2 is viable for AppFolio properties.</div>
+          </div>
+          <div class="owner"><span class="owner-badge owner-liz">Liz</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ UC2 INTAKE DISCOVERY ═══════════════════ -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon uc2">2</div>
+      <div class="section-header-text">
+        <h2>UC2 — Intake Discovery (from 4/8 Call)</h2>
+        <div class="section-desc">How applications arrive per property system &mdash; different from UC1 lease intake</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="action-item">
+          <div class="number">Y</div>
+          <div class="content">
+            <strong>Yardi &mdash; Applications arrive as email attachments</strong>
+            <div class="detail">Liz confirmed applications are received as attached files via email. Same forwarding mechanism as UC1 leases. Viable for UC2.</div>
+          </div>
+          <div class="owner"><span class="owner-badge owner-group">Confirmed</span></div>
+        </div>
+        <div class="action-item">
+          <div class="number">A</div>
+          <div class="content">
+            <strong>Aptly &mdash; Application embedded in email body as a form</strong>
+            <div class="detail">Unlike UC1 (where Aptly sends a download link for the lease), UC2 applications appear <strong>within the email body</strong> as a form &mdash; not as a PDF attachment. Different handling needed from UC1.</div>
+          </div>
+          <div class="owner"><span class="owner-badge owner-group">Confirmed</span></div>
+        </div>
+        <div class="action-item">
+          <div class="number">AF</div>
+          <div class="content">
+            <strong>AppFolio &mdash; TBD, Liz checking with management</strong>
+            <div class="detail">Liz unsure if downloadable application documents are available from AppFolio. May lack access to download apps from the system. Liz to investigate and report back.</div>
+          </div>
+          <div class="owner"><span class="owner-badge owner-liz">Liz</span></div>
+        </div>
+        <div class="action-item">
+          <div class="number">RP</div>
+          <div class="content">
+            <strong>RealPage &mdash; Likely NOT viable</strong>
+            <div class="detail">Applications live entirely within the RealPage system. No downloadable option, no notification, no way to extract application data. Liz said the platform is "one of the simplest systems" with a very rudimentary setup. <strong>UC2 may not be possible for this property (3Eleven).</strong></div>
+          </div>
+          <div class="owner"><span class="owner-badge owner-group">Blocked</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="decision-box" style="margin: 0 0 16px;">
+      <strong>Impact:</strong> UC2 may only cover 8&ndash;9 of 12 properties. RealPage (3Eleven) is likely out. AppFolio (West Loop, Maeve on Ridge) depends on Liz's findings. Trigger for all UC2 comparisons remains: application email &rarr; queue &rarr; QuickBase notification triggers comparison.
+    </div>
+  </div>
+
   <!-- Footnote -->
   <div class="footnote">
-    <strong>Source:</strong> Gemini-generated meeting notes from "Outcome x Luxury Living — Monthly Implementation Update" (April 2, 2026, 11:01 CDT).<br>
-    <strong>Attendees:</strong> Mike McGugan, Liz Chartrand, Stef Goldberg, Aryan Basak, Matt Ernst.
+    <strong>Sources:</strong> Gemini-generated meeting notes from "Outcome x Luxury Living — Monthly Implementation Update" (April 2, 2026, 11:01 CDT) and "Outcome x Luxury Living — Implementation Weekly" (April 8, 2026).<br>
+    <strong>Attendees (4/2):</strong> Mike McGugan, Liz Chartrand, Stef Goldberg, Aryan Basak, Matt Ernst.<br>
+    <strong>Attendees (4/8):</strong> Mike McGugan, Liz Chartrand.
   </div>
 
 </div>

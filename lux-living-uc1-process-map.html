@@ -371,7 +371,7 @@
   <!-- Header -->
   <div class="header">
     <h1>Lux Living — UC1 Lease to Database Comparison</h1>
-    <div class="subtitle">Process map by property system &middot; 11 properties &middot; Updated April 3, 2026</div>
+    <div class="subtitle">Process map by property system &middot; 12 properties &middot; Updated April 8, 2026</div>
   </div>
 
   <!-- ═══════════════════════════ SUMMARY ═══════════════════════════ -->
@@ -389,11 +389,11 @@
       </thead>
       <tbody>
         <tr>
-          <td><span class="badge badge-issue">Outcome-Side Issue</span></td>
+          <td><span class="badge badge-live">Intake Confirmed</span></td>
           <td>Yardi</td>
           <td>The Leo, Wicker Park Connection, The Saint Grand</td>
           <td>Outcome Team</td>
-          <td>Investigate why Saint Grand lease (3/30) isn't in dashboard. Verify all Yardi intake on Outcome side.</td>
+          <td>Intake confirmed working. QA by Monday 4/13 &mdash; output to Liz's inbox for verification.</td>
         </tr>
         <tr>
           <td><span class="badge badge-new">New Intake Path</span></td>
@@ -414,7 +414,7 @@
           <td>Aptly</td>
           <td>Seven 10 West, Norweta, No. 508</td>
           <td>Luxury Living</td>
-          <td>Liz to investigate why auto-forwards aren't working.</td>
+          <td>Liz scheduled time for 4/9 morning to investigate. Filters updated 4/2 but still not firing.</td>
         </tr>
         <tr>
           <td><span class="badge badge-issue">QA Needed</span></td>
@@ -493,7 +493,7 @@
           <div class="card-row"><span class="label">Trigger Subject</span><span class="value"><code>"Lease Agreement Executed"</code></span></div>
           <div class="card-row"><span class="label">Forward</span><span class="value">Auto-forward from property inbox</span></div>
         </div>
-        <div class="card-status">Forward confirmed working on LL side. Pending Outcome-side receipt verification.</div>
+        <div class="card-status">Intake confirmed. QA by Monday 4/13. Output to Liz's inbox for verification.</div>
       </div>
 
       <!-- Wicker Park Connection -->
@@ -507,7 +507,7 @@
           <div class="card-row"><span class="label">Trigger Subject</span><span class="value"><code>"Congratulations &amp; Welcome Home"</code></span></div>
           <div class="card-row"><span class="label">Forward</span><span class="value">Auto-forward from property inbox</span></div>
         </div>
-        <div class="card-status">Forward rules active. Pending Outcome-side receipt confirmation.</div>
+        <div class="card-status">Intake confirmed. QA by Monday 4/13. Output to Liz's inbox for verification.</div>
       </div>
 
       <!-- The Saint Grand -->
@@ -522,7 +522,7 @@
           <div class="card-row"><span class="label">Property Inbox</span><span class="value"><code>saintgrand@luxurylivingchicago.com</code></span></div>
           <div class="card-row"><span class="label">Forward</span><span class="value">Auto-forward from property inbox</span></div>
         </div>
-        <div class="card-status"><strong>Issue:</strong> Lease forwarded 3/30, confirmed in LL admin log, but not appearing in Outcome dashboard. No QA email returned. Outcome-side investigation needed.</div>
+        <div class="card-status"><strong>Issue identified 4/8:</strong> Production environment change broke processing. Dev team fixing. Intake is confirmed &mdash; QA by Monday 4/13.</div>
       </div>
 
       <!-- 111 Point -->
@@ -568,7 +568,7 @@
           <div class="card-row"><span class="label">Trigger Subject</span><span class="value"><code>"Document complete"</code></span></div>
           <div class="card-row"><span class="label">Forward</span><span class="value">Auto-forward from property inbox</span></div>
         </div>
-        <div class="card-status">Aptly forwards were <strong>not firing</strong>. Liz updated Gmail filters 4/2. Stabilized building — awaiting next live lease to confirm.</div>
+        <div class="card-status">Aptly forwards <strong>not firing</strong>. Liz updated Gmail filters 4/2. <strong>Liz scheduled 4/9 morning</strong> to investigate further.</div>
       </div>
 
       <!-- Norweta -->
@@ -582,7 +582,7 @@
           <div class="card-row"><span class="label">Trigger Subject</span><span class="value"><code>"Document complete"</code></span></div>
           <div class="card-row"><span class="label">Forward</span><span class="value">Auto-forward from property inbox</span></div>
         </div>
-        <div class="card-status">Filters updated 4/2. Stabilized building — awaiting live confirmation.</div>
+        <div class="card-status">Filters updated 4/2. Liz scheduled 4/9 morning to investigate. Stabilized building.</div>
       </div>
 
       <!-- No. 508 -->
@@ -596,7 +596,7 @@
           <div class="card-row"><span class="label">Trigger Subject</span><span class="value"><code>"Document complete"</code></span></div>
           <div class="card-row"><span class="label">Forward</span><span class="value">Auto-forward from property inbox</span></div>
         </div>
-        <div class="card-status">Filters updated 4/2. Stabilized building — awaiting live confirmation.</div>
+        <div class="card-status">Filters updated 4/2. Liz scheduled 4/9 morning to investigate. Stabilized building.</div>
       </div>
     </div>
   </div>
@@ -613,7 +613,7 @@
 
     <div class="how-it-works">
       <div class="label">How intake works</div>
-      AppFolio has <strong>no automated lease notification</strong>. Liz set up a <strong>QuickBase notification</strong> as the trigger instead. When a lease is executed, QB sends an email from <code>notify@quickbase.com</code> with the lease attached + Ascent lease term form data. This is a <strong>different intake path</strong> than the direct lease forwards used by Yardi/Aptly properties.
+      AppFolio has <strong>no automated lease notification</strong>. Liz set up a <strong>QuickBase notification</strong> as the trigger instead. When a lease is executed, QB sends an email from <code>notify@quickbase.com</code> with the <strong>lease PDF attached directly</strong> + Ascent lease term form data. <strong>Confirmed working 4/8</strong> &mdash; no extra step needed to fetch the lease from Ascent. Example received by Mike.
     </div>
 
     <div class="property-grid">
@@ -661,7 +661,7 @@
 
     <div class="how-it-works">
       <div class="label">How intake works</div>
-      RealPage has <strong>no reliable automated lease notification</strong> (PM updates are inconsistent). Liz set up the same <strong>QuickBase notification</strong> workaround. Email from <code>notify@quickbase.com</code> with lease + Ascent data attached.
+      RealPage has <strong>no reliable automated lease notification</strong>. Liz set up the same <strong>QuickBase notification</strong> as AppFolio. Email from <code>notify@quickbase.com</code> with <strong>lease PDF attached directly</strong> + Ascent data. <strong>Confirmed working 4/8</strong> &mdash; same format as AppFolio properties.
     </div>
 
     <div class="property-grid">
