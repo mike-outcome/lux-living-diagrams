@@ -422,8 +422,8 @@
         <div class="action-item">
           <div class="number">4</div>
           <div class="content">
-            <strong>Add deep link to the input lease in comparison output email</strong>
-            <div class="detail">When a user sees a mismatch, they need to quickly reference the original lease. The lease is already stored in the Outcome data grid when the input email is received. Add a link in the comparison email that takes the user directly to the specific location in the lease where the field in question appears. Same pattern applies to UC2 with applications (see below).</div>
+            <strong style="text-decoration: line-through; color: #9ca3af;">Add deep link to the input lease in comparison output email</strong>
+            <div class="detail" style="text-decoration: line-through; color: #c0c0c0;">When a user sees a mismatch, they need to quickly reference the original lease. The lease is already stored in the Outcome data grid when the input email is received. Add a link in the comparison email that takes the user directly to the specific location in the lease where the field in question appears. Same pattern applies to UC2 with applications (see below).</div>
           </div>
           <div class="owner"><span class="owner-badge owner-dev">Dev Team</span></div>
         </div>
@@ -514,10 +514,14 @@
         <div class="action-item">
           <div class="number">4</div>
           <div class="content">
-            <strong>Add deep link to the input application in comparison output email</strong>
-            <div class="detail">Applications are not stored in Ascent — they arrive via the input email and are already stored in the Outcome data grid. When a user sees a mismatch, they need to quickly reference the original application. Add a link in the comparison email that takes them directly to the specific location in the application where the field appears. Same pattern as UC1 deep link to leases (see above).</div>
+            <strong style="text-decoration: line-through; color: #9ca3af;">Add deep link to the input application in comparison output email</strong>
+            <div class="detail" style="text-decoration: line-through; color: #c0c0c0;">Applications are not stored in Ascent — they arrive via the input email and are already stored in the Outcome data grid. When a user sees a mismatch, they need to quickly reference the original application. Add a link in the comparison email that takes them directly to the specific location in the application where the field appears. Same pattern as UC1 deep link to leases (see above).</div>
           </div>
           <div class="owner"><span class="owner-badge owner-dev">Dev Team</span></div>
+        </div>
+        <div class="decision-box" style="margin: 4px 18px 8px;">
+          <strong>Update (4/8):</strong> Liz confirmed this is <strong>not necessary for deployment</strong>. Confidence percentages + Ascent link are sufficient for property teams to QA. Deprioritized &mdash; nice-to-have for a future iteration.
+        </div>
         </div>
         <div class="action-item">
           <div class="number">5</div>
@@ -628,90 +632,7 @@
           </div>
           <div class="owner"><span class="owner-badge owner-dev">Outcome</span></div>
         </div>
-        <div class="action-item">
-          <div class="number">2</div>
-          <div class="content">
-            <strong>Route QA output to Liz's inbox</strong>
-            <div class="detail">Monday 4/13 &mdash; send QA test output comparison emails to Liz's inbox (not property inboxes). Liz wants to verify mechanics and see what property teams will see before going live. Both Mike and Liz can be on the recipient list.</div>
-          </div>
-          <div class="owner"><span class="owner-badge owner-dev">Outcome</span></div>
-        </div>
-        <div class="action-item">
-          <div class="number">3</div>
-          <div class="content">
-            <strong>Create training video for property teams</strong>
-            <div class="detail">Video explaining what property teams are looking at: mismatched fields, missing fields, how to read the output and take action. Required before deployment to properties.</div>
-          </div>
-          <div class="owner"><span class="owner-badge owner-dev">Outcome</span></div>
-        </div>
-        <div class="action-item">
-          <div class="number">4</div>
-          <div class="content">
-            <strong>Fix Aptly auto-forwards</strong>
-            <div class="detail">Liz scheduled calendar time for 4/9 morning to investigate why auto-forwards aren't firing for Aptly properties (Seven 10 West, Norweta, No. 508).</div>
-          </div>
-          <div class="owner"><span class="owner-badge owner-liz">Liz</span></div>
-        </div>
-        <div class="action-item">
-          <div class="number">5</div>
-          <div class="content">
-            <strong>Check AppFolio for downloadable application documents</strong>
-            <div class="detail">For UC2 &mdash; Liz to contact management to check if downloadable application docs or related info is available from the AppFolio system. Currently unclear if UC2 is viable for AppFolio properties.</div>
-          </div>
-          <div class="owner"><span class="owner-badge owner-liz">Liz</span></div>
-        </div>
       </div>
-    </div>
-  </div>
-
-  <!-- ═══════════════════ UC2 INTAKE DISCOVERY ═══════════════════ -->
-  <div class="section">
-    <div class="section-header">
-      <div class="section-icon uc2">2</div>
-      <div class="section-header-text">
-        <h2>UC2 — Intake Discovery (from 4/8 Call)</h2>
-        <div class="section-desc">How applications arrive per property system &mdash; different from UC1 lease intake</div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-body">
-        <div class="action-item">
-          <div class="number">Y</div>
-          <div class="content">
-            <strong>Yardi &mdash; Applications arrive as email attachments</strong>
-            <div class="detail">Liz confirmed applications are received as attached files via email. Same forwarding mechanism as UC1 leases. Viable for UC2.</div>
-          </div>
-          <div class="owner"><span class="owner-badge owner-group">Confirmed</span></div>
-        </div>
-        <div class="action-item">
-          <div class="number">A</div>
-          <div class="content">
-            <strong>Aptly &mdash; Application embedded in email body as a form</strong>
-            <div class="detail">Unlike UC1 (where Aptly sends a download link for the lease), UC2 applications appear <strong>within the email body</strong> as a form &mdash; not as a PDF attachment. Different handling needed from UC1.</div>
-          </div>
-          <div class="owner"><span class="owner-badge owner-group">Confirmed</span></div>
-        </div>
-        <div class="action-item">
-          <div class="number">AF</div>
-          <div class="content">
-            <strong>AppFolio &mdash; TBD, Liz checking with management</strong>
-            <div class="detail">Liz unsure if downloadable application documents are available from AppFolio. May lack access to download apps from the system. Liz to investigate and report back.</div>
-          </div>
-          <div class="owner"><span class="owner-badge owner-liz">Liz</span></div>
-        </div>
-        <div class="action-item">
-          <div class="number">RP</div>
-          <div class="content">
-            <strong>RealPage &mdash; Likely NOT viable</strong>
-            <div class="detail">Applications live entirely within the RealPage system. No downloadable option, no notification, no way to extract application data. Liz said the platform is "one of the simplest systems" with a very rudimentary setup. <strong>UC2 may not be possible for this property (3Eleven).</strong></div>
-          </div>
-          <div class="owner"><span class="owner-badge owner-group">Blocked</span></div>
-        </div>
-      </div>
-    </div>
-    <div class="decision-box" style="margin: 0 0 16px;">
-      <strong>Impact:</strong> UC2 may only cover 8&ndash;9 of 12 properties. RealPage (3Eleven) is likely out. AppFolio (West Loop, Maeve on Ridge) depends on Liz's findings. Trigger for all UC2 comparisons remains: application email &rarr; queue &rarr; QuickBase notification triggers comparison.
     </div>
   </div>
 
